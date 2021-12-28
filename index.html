@@ -5,27 +5,82 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>University Website Design </title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
 </head>
 <body>
 	<section class="header">
 		<nav>
 			<a href="index.html"><img src="images/logo.png"></a>
-			<div class="nav-links">
-				<ul>
-					<li><a href="">HOME</a></li>
-					<li><a href="">ABOUT</a></li>
-					<li><a href="">COURSE</a></li>
-					<li><a href="">BLOG</a></li>
-					<li><a href="">CONTACT US</a></li>
-				</ul>
-				
-			</div>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+		        			<li><a href="">ABOUT</a></li>
+						<li><a href=""> COURSE</a></li>
+						<li><a href="">BLOG</a></li>
+						<li><a href="">CONTACT US</a></li>
+					</ul>
+			</div>    
+			<i class="fa fa-bars" onclick="showMenu()"></i>
 		</nav>
+
 		<div class="text-box">
-			<h1>Worlds Largest University</h1>
-			<p>making weibstes now is the easiest in the world now. You ust need to learn <br> HTML, CSS,Javascript and you are good to go.</p>
+			<h1>World's Largest University</h1>
+			<p>Making websites now is the easiest in the world now. You just need to learn <br> HTML, CSS,Javascript and you are good to go.</p>
 			<a href="" class="hero-btn">Visit Us To Know More</a>
 		</div>
 	</section>
+
+	<!--courses-->
+
+	<section class="course">
+		
+		<h1>Courses We Offer</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+		<div class="row">
+			<div class="course-col">
+				<h3>Intermediate</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+			<div class="course-col">
+				<h3>Degree</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+			<div class="course-col">
+				<h3>Post Graduation</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+		</div>
+ 
+	</section>
+
+
+	<!--java script for toggle menu function -->
+
+<script>
+
+	var navLinks = document.getElementsByTagName('navLinks');
+
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+
 </body>
 </html>
